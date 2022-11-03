@@ -4,7 +4,7 @@
 地区：{{region.DATA}} 
 天气：{{weather.DATA}} 
 最低气温: {{min_temperature.DATA}} 
-最高气温: {{temp_max.DATA}} 
+最高气温: {{tempMax.DATA}} 
 当前气温：{{temp.DATA}} 
 当前风向：{{wind_dir.DATA}} 
 
