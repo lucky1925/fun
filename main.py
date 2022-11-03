@@ -54,11 +54,13 @@ def get_weather(region):
     response = get(weather_url, headers=headers).json()
     # 天气
     weather = response["now"]["text"]
+    # 最高气温
+    min_temperature = response["now"]["min_temperature"]
     # 当前温度
     temp = response["now"]["temp"] + u"\N{DEGREE SIGN}" + "C"
     # 风向
     wind_dir = response["now"]["windDir"]
-    return weather, temp, wind_dir
+    return weather, temp, wind_dir,min_temperature
  
  
 def get_birthday(birthday, year, today):

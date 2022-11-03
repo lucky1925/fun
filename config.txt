@@ -5,7 +5,7 @@
 # 公众号appSecret
 "app_secret": "b53b2f732ec10dc32b90d9364a975cf2",
 # 模板消息id
-"template_id": "8j_06Tdrk9Vs_og0dY04nSAVxo6rQ4emkXFUUqfcUVU",
+"template_id": "-Caff4GJQ6VVsjTRzpsCSpotb_r5kZ9RGRU0oPhBIfI",
 # 接收公众号消息的微信号，["wx1", "wx2"]
 "user": ["oFijX6A66WWZSWHuuF-kVIyBH3Bo"],
  
