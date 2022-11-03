@@ -11,6 +11,7 @@
 {{birthday1.DATA}} 
 {{birthday2.DATA}}
 
+{{huayu.DATA}}
 今天也要努力摸鱼！！！𓆡𓂬
 
 {{note_en.DATA}} 

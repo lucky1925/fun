@@ -5,13 +5,14 @@
 # 公众号appSecret
 "app_secret": "b53b2f732ec10dc32b90d9364a975cf2",
 # 模板消息id
-"template_id": "JqfVMog1dnRzAYIzMPPGm1eofiudMp5vg6SOBuRXiDQ",
+"template_id": "8j_06Tdrk9Vs_og0dY04nSAVxo6rQ4emkXFUUqfcUVU",
 # 接收公众号消息的微信号，["wx1", "wx2"]
 "user": ["oFijX6A66WWZSWHuuF-kVIyBH3Bo"],
  
 # 信息配置
 # 和风天气apikey
 "weather_key": "ebf9c685ef5e4926918129b77ed916ef",
+"huayu_API":"20b999347b1fbfb2f43dede3f24f65c7",
 # 所在地区
 "region": "成都市",
 # 生日1，修改名字为对应需要显示的名字，如果生日为农历，在最前面加上r
