@@ -12,7 +12,7 @@
 # 信息配置
 # 和风天气apikey
 "weather_key": "ebf9c685ef5e4926918129b77ed916ef",
-"huayu_API":"20b999347b1fbfb2f43dede3f24f65c7"
+"huayu_API":"20b999347b1fbfb2f43dede3f24f65c7",
 # 所在地区
 "region": "成都市",
 # 生日1，修改名字为对应需要显示的名字，如果生日为农历，在最前面加上r
