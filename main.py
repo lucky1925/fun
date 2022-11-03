@@ -58,7 +58,9 @@ def get_weather(region):
     temp = response["now"]["temp"] + u"\N{DEGREE SIGN}" + "C"
     # 风向
     wind_dir = response["now"]["windDir"]
-    return weather, temp, wind_dir
+    #  空气质量
+    air_quality = response["now"]["air_quality"]
+    return weather, temp, wind_dir, air_quality
  
  
 def get_birthday(birthday, year, today):
@@ -153,6 +155,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": weather,
                 "color": get_color()
             },
+
             "temp": {
                 "value": temp,
                 "color": get_color()
