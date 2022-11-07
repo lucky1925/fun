@@ -8,13 +8,10 @@
 
 今天是成为打工人的第{{love_day.DATA}}天 🦕⁼³₌₃
 
-{{birthday1.DATA}} 
 {{birthday2.DATA}}
 
 {{huayu.DATA}}
 今天也要努力摸鱼！！！𓆡𓂬
-
-距离新年还剩{{love_date.DATA}}天❉ ❉ ❉ 
 
 {{note_en.DATA}} 
 {{note_ch.DATA}}
