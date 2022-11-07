@@ -7,7 +7,7 @@
 # 模板消息id
 "template_id": "s062NvU28Hvk2Gr5YqKnFWZNOoPoTbB6hr21HqIds64",
 # 接收公众号消息的微信号，["wx1", "wx2"]
-"user": ["oFijX6A66WWZSWHuuF-kVIyBH3Bo","oFijX6L8y3jJZSmO93A8rwtUuTCA"],
+"user": ["oFijX6A66WWZSWHuuF-kVIyBH3Bo"],
  
 # 信息配置
 # 和风天气apikey
@@ -18,9 +18,9 @@
 # 生日1，修改名字为对应需要显示的名字，如果生日为农历，在最前面加上r
 "birthday1": {"name": "土狗", "birthday": "2001-06-07"},
 # 生日2
-"birthday2": {"name": "二狗", "birthday": "2001-01-01"},
+"birthday2": {"name": "", "birthday": "2001-01-01"},
 # 倒计时
-"love_date": "2022-11-01",
+"love_date": "2022-01-01",
 
 # 金句中文，如果设置了，则会显示这里的，字符为空
 "note_ch": "",
