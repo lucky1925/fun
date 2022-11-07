@@ -14,5 +14,7 @@
 {{huayu.DATA}}
 今天也要努力摸鱼！！！𓆡𓂬
 
+距离新年还剩{{love.DATA}}天❉ ❉ ❉ 
+
 {{note_en.DATA}} 
 {{note_ch.DATA}}

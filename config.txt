@@ -5,7 +5,7 @@
 # 公众号appSecret
 "app_secret": "b53b2f732ec10dc32b90d9364a975cf2",
 # 模板消息id
-"template_id": "s062NvU28Hvk2Gr5YqKnFWZNOoPoTbB6hr21HqIds64",
+"template_id": "8B_zqXy7fVOvTkFc4iT-iQq5rIv5QBDDAOzu9bpdaU0",
 # 接收公众号消息的微信号，["wx1", "wx2"]
 "user": ["oFijX6A66WWZSWHuuF-kVIyBH3Bo"],
  
@@ -20,7 +20,7 @@
 # 生日2
 "birthday2": {"name": "", "birthday": "r2001-01-01"},
 # 倒计时
-"love_date": "2022-01-01",
+"love_date": "2023-01-01",
 
 # 金句中文，如果设置了，则会显示这里的，字符为空
 "note_ch": "",
