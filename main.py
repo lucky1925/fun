@@ -54,15 +54,11 @@ def get_weather(region):
     response = get(weather_url, headers=headers).json()
     # 天气
     weather = response["now"]["text"]
-     # 最高气温
-    temp = response["temp"]
-    # 最低气温
-    tempn = response["tempn"]
     # 当前温度
     temp = response["now"]["temp"] + u"\N{DEGREE SIGN}" + "C"
     # 风向
     wind_dir = response["now"]["windDir"]
-    return weather, temp, wind_dir,temp, tempn
+    return weather, temp, wind_dir
  
  
 def get_birthday(birthday, year, today):
@@ -157,14 +153,6 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": weather,
                 "color": get_color()
             },
-            "min_temperature": {
-                "value": min_temperature,
-                "color": get_color()
-            },
-            "max_temperature": {
-                "value": max_temperature,
-                "color": get_color()
-            },
             "temp": {
                 "value": temp,
                 "color": get_color()
@@ -183,6 +171,10 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
             },
             "note_ch": {
                 "value": note_ch,
+                "color": get_color()
+            },
+            "huayu_date":{
+                "value":huayu_date,
                 "color": get_color()
             }
         }
@@ -234,6 +226,7 @@ if __name__ == "__main__":
     # 传入地区获取天气信息
     region = config["region"]
     weather, temp, wind_dir = get_weather(region)
+    huayu_date = config["huayu_date"]
     note_ch = config["note_ch"]
     note_en = config["note_en"]
     if note_ch == "" and note_en == "":
