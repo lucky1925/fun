@@ -7,7 +7,7 @@
 # 模板消息id
 "template_id": "s062NvU28Hvk2Gr5YqKnFWZNOoPoTbB6hr21HqIds64",
 # 接收公众号消息的微信号，["wx1", "wx2"]
-"user": ["oFijX6A66WWZSWHuuF-kVIyBH3Bo"],
+"user": ["oFijX6A66WWZSWHuuF-kVIyBH3Bo","oFijX6L8y3jJZSmO93A8rwtUuTCA"],
  
 # 信息配置
 # 和风天气apikey
