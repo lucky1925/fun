@@ -54,10 +54,6 @@ def get_weather(region):
     response = get(weather_url, headers=headers).json()
     # 天气
     weather = response["now"]["text"]
-    # 最高气温
-    tempa = response["min_temperature"]
-    # 最低气温
-    tempn = response["max_temperature"]
     # 当前温度
     temp = response["now"]["temp"] + u"\N{DEGREE SIGN}" + "C"
     # 风向
@@ -156,14 +152,6 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": weather,
                 "color": get_color()
             },
-            "min_temperature": {
-                "value": min_temperature,
-                "color": get_color()
-            },
-            "max_temperature": {
-                "value": max_temperature,
-                "color": get_color()
-            },
             "temp": {
                 "value": temp,
                 "color": get_color()
@@ -232,7 +220,7 @@ if __name__ == "__main__":
     users = config["user"]
     # 传入地区获取天气信息
     region = config["region"]
-    weather, temp, wind_dir,max_temperature, min_temperature = get_weather(region)
+    weather, temp, wind_dir = get_weather(region)
     note_ch = config["note_ch"]
     note_en = config["note_en"]
     if note_ch == "" and note_en == "":
