@@ -5,7 +5,7 @@
 # 公众号appSecret
 "app_secret": "b53b2f732ec10dc32b90d9364a975cf2",
 # 模板消息id
-"template_id": "OzM4fQiNDJov2MxV2IliUDKZV9g-gxK-9exyyMYnhu8",
+"template_id": "8yo69XitwN7y9DruG3ATMcP2GeH4P7bDYypcJ3Q6p4g",
 # 接收公众号消息的微信号，["wx1", "wx2"]
 "user": ["oFijX6A66WWZSWHuuF-kVIyBH3Bo"],
  
@@ -16,7 +16,7 @@
 # 所在地区
 "region": "成都市",
 # 生日1，修改名字为对应需要显示的名字，如果生日为农历，在最前面加上r
-"birthday1": {"name": "土狗", "birthday": "2001-06-07"},
+# "birthday1": {"name": "土狗", "birthday": "2001-06-07"}
 # 生日2
 "birthday2": {"name": "", "birthday": "r2001-01-01"},
 # 倒计时
