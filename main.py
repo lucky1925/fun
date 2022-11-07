@@ -54,11 +54,15 @@ def get_weather(region):
     response = get(weather_url, headers=headers).json()
     # 天气
     weather = response["now"]["text"]
+    # 最高气温
+    tempa = response["tempa"]
+    # 最低气温
+    tempn = response["tempn"]
     # 当前温度
     temp = response["now"]["temp"] + u"\N{DEGREE SIGN}" + "C"
     # 风向
     wind_dir = response["now"]["windDir"]
-    return weather, temp, wind_dir
+    return weather, temp, wind_dir,tempa,tempn
  
  
 def get_birthday(birthday, year, today):
@@ -113,8 +117,7 @@ def get_ciba():
     note_en = r.json()["content"]
     note_ch = r.json()["note"]
     return note_ch, note_en
- 
- 
+
 def send_message(to_user, access_token, region_name, weather, temp, wind_dir, note_ch, note_en):
     url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={}".format(access_token)
     week_list = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"]
@@ -153,6 +156,14 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": weather,
                 "color": get_color()
             },
+            "min_temperature": {
+                "value": min_temperature,
+                "color": get_color()
+            },
+            "max_temperature": {
+                "value": max_temperature,
+                "color": get_color()
+            },
             "temp": {
                 "value": temp,
                 "color": get_color()
@@ -173,10 +184,6 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": note_ch,
                 "color": get_color()
             },
-            "huayu_date":{
-                "value":huayu_date,
-                "color": get_color()
-            }
         }
     }
     for key, value in birthdays.items():
@@ -225,8 +232,7 @@ if __name__ == "__main__":
     users = config["user"]
     # 传入地区获取天气信息
     region = config["region"]
-    weather, temp, wind_dir = get_weather(region)
-    huayu_date = config["huayu_date"]
+    weather, temp, wind_dir,max_temperature, min_temperature = get_weather(region)
     note_ch = config["note_ch"]
     note_en = config["note_en"]
     if note_ch == "" and note_en == "":
